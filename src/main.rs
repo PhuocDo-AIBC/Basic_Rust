@@ -7,8 +7,6 @@ fn _print(){
 fn _x2( _a : i32) -> i32{
     _a * 2
 }
-
-
 fn main() {
 // Data type   
     println!("Hello, world!");
