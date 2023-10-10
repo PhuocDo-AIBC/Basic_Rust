@@ -65,9 +65,26 @@ fn main() {
     for i in _vec.iter(){
        println!("Value: {}",i);
     }
+    
     let _max = _vec.iter().max().unwrap();
     println!("Max : {}",_max);
 
+    let _vec_two = vec![1, 2, 3, 4 ,5];
+    // _vec_two.iter().enumerate().for_each(|x|{
+    //     println!("Index: {}, value: {}",x.0, x.1);
+    // });
+
+    let _res: Vec<i32> = _vec_two.iter().map(|x|{
+        x * 2
+    }).collect();
+    println!("Res : {:?}",_res);
+
     _print();
-    println!("{}",_x2(3));
+    println!("{}",_x2(3)); 
+
+    // Closure 
+    let _closure = |_x: i32|{
+        println!("{}", _x);
+    };
+    _closure(32);
 }
